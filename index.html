@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock investing done right | SmallCase</title>
+    <!--Bootstrap Links-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Fav Icons-->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="FavIons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="FavIons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="FavIons/favicon-16x16.png">
+    <link rel="manifest" href="FavIons/site.webmanifest">
+    <link rel="mask-icon" href="FavIons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!--Linking of Css-->
+
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/style.css">
+
+    <!--Linking of javaScript-->
+
+    <link rel="stylesheet" href="JavaScript/popper.min.js">
+
+    <!--Linking of Font-Awesome-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+</head>
+
+<body>
+
+
+    <!--NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand ms-5" href="https://www.smallcase.com/">
+                    <!--Svg Icons-->
+
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg width="150px" height="55px" viewBox="0 0 386 98" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                        <title>smallcase_logo__standard_blue</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                            <polygon id="path-1" points="0 0 386.538462 0 386.538462 100 0 100"></polygon>
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="_standard_blue" transform="translate(-1.000000, -1.000000)">
+                                <g id="Group-3-Copy-6">
+                                    <mask id="mask-2" fill="white">
+                                        <use xlink:href="#path-1"></use>
+                                    </mask>
+                                    <g id="Clip-2"></g>
+                                    <path
+                                        d="M380.108022,46.3907979 C379.960817,42.7661349 377.039076,39.5742124 372.654601,39.5742124 C367.832238,39.5742124 365.055838,42.6200388 364.61795,46.3889486 L380.108022,46.3889486 L380.108022,46.3907979 Z M372.801806,34.0650946 C380.691253,34.0650946 386.538462,39.8645553 386.538462,47.840663 C386.538462,48.4231982 386.538462,49.434775 386.391256,49.871214 C386.391256,50.5942973 385.660821,51.1768324 385.075728,51.1768324 L364.178198,51.1768324 C364.178198,55.2379343 367.979443,59.297187 373.239695,59.297187 C376.746529,59.297187 378.792494,57.9934179 380.691253,56.8338956 C381.27821,56.3974566 381.863303,56.2513605 382.446533,56.9781424 L384.196224,59.7354753 C384.783181,60.3124625 384.930386,60.8912989 384.052746,61.7641769 C381.859576,63.6504811 377.914853,65.534936 372.801806,65.534936 C363.593104,65.534936 357.749622,58.4298569 357.749622,49.871214 C357.749622,41.3162698 363.596831,34.0650946 372.801806,34.0650946 Z M331.888114,62.4872602 C331.450226,62.1987666 331.00861,61.6180808 331.303021,60.8912989 L332.618549,58.1376647 C332.909233,57.5588282 333.786873,57.2703346 334.515445,57.7049243 C336.272589,58.7183505 338.460168,59.8778728 341.967003,59.8778728 C344.450856,59.8778728 345.913589,58.7146519 345.913589,56.9781424 C345.913589,54.9494408 343.575079,53.6438224 339.485014,51.7575182 C334.806129,49.7251179 331.303021,47.2636759 331.303021,42.3315452 C331.303021,38.5589369 333.930352,34.207492 341.238431,34.207492 C345.475701,34.207492 348.544647,35.5131104 350.003654,36.3841391 C350.735953,36.9629756 351.030363,37.8340043 350.588748,38.5589369 L349.567629,40.5876385 C349.129741,41.4586672 348.2521,41.4586672 347.667007,41.1701737 C345.622906,40.299145 343.575079,39.7221578 341.238431,39.7221578 C338.609237,39.7221578 337.440913,41.0240775 337.440913,42.3315452 C337.440913,44.2141508 339.628492,45.3736731 342.55396,46.6829901 C348.104895,49.0001853 352.345892,51.0307363 352.345892,56.5417034 C352.345892,61.1834911 348.2521,65.2445931 341.529114,65.2445931 C337.001161,65.534936 333.639668,63.6504811 331.884387,62.4872602 L331.888114,62.4872602 Z M310.696174,60.1663663 C313.766984,60.1663663 316.83593,57.9934179 317.71357,56.5435527 L317.71357,51.6114221 C317.273819,51.3210792 314.931581,50.5942973 312.160772,50.5942973 C308.65021,50.5942973 305.873811,52.4843001 305.873811,55.5264279 C306.021016,58.1376647 307.630955,60.1663663 310.696174,60.1663663 Z M311.722883,45.8101121 C314.788103,45.8101121 317.857049,46.6792915 317.857049,46.6792915 C318.004254,41.8951062 316.83593,39.8682539 313.034685,39.8682539 C309.527851,39.8682539 306.168221,40.8816801 304.562009,41.3162698 C303.684368,41.4586672 303.099275,40.8816801 302.808591,40.0106514 L302.221635,37.5455107 C302.078156,36.5302352 302.516045,36.0956455 303.24648,35.801604 C303.827847,35.6592065 308.068843,34.0650946 313.619779,34.0650946 C323.264506,34.0650946 324.142146,39.8645553 324.142146,47.2599772 L324.142146,63.2121928 C324.089972,63.9907556 323.463885,64.6121264 322.679412,64.6639073 L320.488106,64.6639073 C319.90115,64.6639073 319.610466,64.3754137 319.316056,63.6504811 L318.589347,61.6180808 C316.109222,64.0739749 312.738412,65.4332235 309.237167,65.3869906 C303.537163,65.3869906 299.445235,61.6180808 299.445235,55.3840305 C299.59244,50.0173101 303.976915,45.8138107 311.722883,45.8138107 L311.722883,45.8101121 Z M283.371932,34.0650946 C288.050818,34.0650946 291.555789,35.801604 294.332188,39.2820202 C294.917282,40.0106514 294.76635,40.8779814 294.041505,41.4586672 L291.702994,43.6371636 C290.825354,44.3602469 290.24026,43.7795611 289.800508,43.3449714 C288.488706,41.8951062 286.00299,40.299145 283.519137,40.299145 C278.406091,40.299145 274.310436,44.506343 274.310436,49.7251179 C274.310436,55.0918382 278.258885,59.297187 283.228454,59.297187 C287.173177,59.297187 288.779389,57.1242385 290.387465,55.5264279 C290.968832,54.9457421 291.702994,54.9457421 292.429702,55.3803318 L294.479393,56.9781424 C295.207965,57.5588282 295.500512,58.2837608 295.06076,59.1529402 C292.576908,62.9218499 288.488706,65.3869906 283.228454,65.3869906 C274.752051,65.3869906 267.736518,58.7183505 267.736518,49.7251179 C267.883723,41.0240775 275.042734,34.0650946 283.375659,34.0650946 L283.371932,34.0650946 Z M253.856385,20.7204172 C253.856385,19.9973339 254.439615,19.2724013 255.315392,19.2724013 L258.969431,19.2724013 C259.752041,19.3260315 260.374401,19.9437037 260.428439,20.7204172 L260.428439,63.3619875 C260.374401,64.138701 259.752041,64.7563732 258.969431,64.8100034 L255.319118,64.8100034 C254.512286,64.8100034 253.856385,64.1590435 253.856385,63.3582889 L253.856385,20.7204172 Z M237.781218,20.7204172 C237.781218,19.9973339 238.366312,19.2724013 239.242089,19.2724013 L242.896129,19.2724013 C243.678738,19.3260315 244.301099,19.9437037 244.355136,20.7204172 L244.355136,63.3619875 C244.301099,64.138701 243.678738,64.7563732 242.896129,64.8100034 L239.245816,64.8100034 C238.438983,64.8100034 237.781218,64.1590435 237.781218,63.3582889 L237.781218,20.7204172 Z M215.27934,60.1663663 C218.346423,60.1663663 221.413506,57.9934179 222.291146,56.5435527 L222.291146,51.6114221 C221.855121,51.3210792 219.514746,50.5942973 216.738347,50.5942973 C213.231512,50.5942973 210.456976,52.4843001 210.456976,55.5264279 C210.456976,58.1376647 212.063189,60.1663663 215.27934,60.1663663 Z M216.15698,45.8101121 C219.224063,45.8101121 222.291146,46.6792915 222.291146,46.6792915 C222.438351,41.8951062 221.270027,39.8682539 217.468782,39.8682539 C213.963811,39.8682539 210.604181,40.8816801 208.997969,41.3162698 C208.118466,41.4586672 207.533372,40.8816801 207.242689,40.0106514 L206.655732,37.5455107 C206.512253,36.5302352 206.946415,36.0956455 207.680577,35.801604 C208.263807,35.6592065 212.502941,34.0650946 218.053876,34.0650946 C227.698603,34.0650946 228.721585,39.8645553 228.721585,47.2599772 L228.721585,63.2121928 C228.667548,63.9907556 228.045187,64.6102771 227.260714,64.6639073 L225.067545,64.6639073 C224.484315,64.6639073 224.193632,64.3754137 223.755743,63.6504811 L223.021581,61.6180808 C220.541455,64.0739749 217.172509,65.4313742 213.673128,65.3869906 C207.97126,65.3869906 203.881196,61.6180808 203.881196,55.3840305 C204.028401,50.0173101 208.411012,45.8138107 216.15698,45.8138107 L216.15698,45.8101121 Z M151.861906,36.238043 C151.861906,35.5131104 152.443273,34.7900272 153.320913,34.7900272 L154.781784,34.7900272 C155.512219,34.7900272 155.953834,35.0785207 156.097312,35.6592065 L156.974953,38.268594 C157.55632,37.5455107 160.772471,34.0650946 166.61968,34.0650946 C171.002291,34.0650946 173.631486,35.801604 175.824655,38.8511291 C176.702295,37.9801004 180.20913,34.0650946 186.050749,34.0650946 C195.261314,34.0650946 197.597962,40.4452411 197.597962,48.2771021 L197.597962,63.3582889 C197.597962,64.1590435 196.94206,64.8100034 196.135228,64.8100034 L192.484915,64.8100034 C191.607274,64.8100034 191.020317,64.2293176 191.020317,63.3582889 L191.020317,47.9867592 C191.020317,43.2007246 189.123422,40.299145 185.031493,40.299145 C180.499813,40.299145 178.308508,43.3449714 177.723414,43.7795611 C177.870619,44.3602469 178.014097,46.2447018 178.014097,47.840663 L178.014097,63.3619875 C178.014097,64.0813722 177.430867,64.8100034 176.702295,64.8100034 L172.90105,64.8100034 C172.02341,64.8100034 171.442043,64.2293176 171.442043,63.3582889 L171.442043,47.9867592 C171.442043,43.0546285 169.686763,40.299145 165.447629,40.299145 C160.919676,40.299145 158.581165,43.6371636 158.290482,44.6542884 L158.290482,63.3582889 C158.238308,64.1368517 157.61222,64.7582225 156.827748,64.8100034 L153.177435,64.8100034 C152.368739,64.8100034 151.714701,64.1590435 151.714701,63.3582889 L151.714701,36.238043 L151.861906,36.238043 Z M124.24139,62.4872602 C123.805365,62.1987666 123.36375,61.6180808 123.65816,60.8912989 L124.971826,58.1376647 C125.266236,57.5588282 126.143876,57.2703346 126.874311,57.7049243 C128.624002,58.7183505 130.819035,59.8778728 134.324006,59.8778728 C136.809722,59.8778728 138.268729,58.7146519 138.268729,56.9781424 C138.268729,54.9494408 135.932081,53.6438224 131.840153,51.7575182 C127.164995,49.7251179 123.65816,47.2636759 123.65816,42.3315452 C123.65816,38.5589369 126.287354,34.207492 133.593571,34.207492 C137.830841,34.207492 140.90165,35.5131104 142.360657,36.3841391 C143.091093,36.9629756 143.385503,37.8340043 142.947614,38.5589369 L141.922769,40.5876385 C141.486744,41.4586672 140.610967,41.4586672 140.02401,41.1701737 C137.981772,40.299145 135.932081,39.7221578 133.593571,39.7221578 C130.96624,39.7221578 129.794189,41.0240775 129.794189,42.3315452 C129.794189,44.2141508 131.987358,45.3736731 134.910963,46.6829901 C140.463762,49.0001853 144.699168,51.0307363 144.699168,56.5417034 C144.699168,61.1834911 140.610967,65.2445931 133.884254,65.2445931 C129.358164,65.534936 125.996671,63.6504811 124.24139,62.4872602 Z M43.5711497,13.3786254 L60.3748877,21.4823361 C61.2059441,21.8836381 61.5543916,22.8767217 61.1481801,23.7015175 C60.9897949,24.0269974 60.7307885,24.2932992 60.4047014,24.4578885 L44.1040693,32.7391337 C43.6214602,32.9758464 43.0550002,32.9758464 42.5723912,32.7391337 L25.7705165,24.6391216 C24.9394601,24.2378197 24.5910126,23.2428867 24.9953607,22.4180909 C25.1537459,22.092611 25.4146157,21.8300079 25.7388395,21.6654186 L42.0394716,13.382324 C42.5220806,13.143762 43.0885406,13.1419127 43.5711497,13.3786254 Z M43.6922677,44.1549726 L83.4655865,23.9474768 C84.2854628,23.5276816 84.6096866,22.5272007 84.1848416,21.7098022 C84.0208664,21.3898702 83.7562699,21.1346643 83.4301827,20.9774723 L43.9997214,1.96463579 C43.5189757,1.72607379 42.9543791,1.72607379 42.4736334,1.96463579 L2.70031466,22.1628851 C1.87857497,22.5826802 1.5524878,23.5831611 1.97360609,24.3987103 C2.13944471,24.7204916 2.40590452,24.9812454 2.73385505,25.1384374 L42.1810866,44.1475754 C42.6562422,44.3805894 43.2152488,44.3805894 43.6922677,44.1475754 L43.6922677,44.1549726 Z M77.1134083,58.7146519 C76.8134081,65.610758 73.0363869,71.8928907 67.0661965,75.4287863 C61.530168,78.2526947 57.0394817,75.3585123 57.0432084,68.9469274 C57.3394819,62.0526705 61.1165031,55.7668392 67.0904202,52.2309436 C72.6245854,49.4070352 77.1134083,52.3141629 77.1134083,58.7109532 L77.1134083,58.7146519 Z M88.8525466,76.0631024 L88.8525466,31.1191313 C88.8450932,30.1907737 88.0811175,29.4436493 87.1457132,29.4510466 C86.87739,29.4528959 86.6127936,29.517622 86.3742841,29.639677 L46.2469279,50.1282692 C45.6860579,50.4093655 45.3338838,50.9789554 45.3320204,51.6021755 L45.3320204,96.5461466 C45.3394738,97.4745041 46.1034495,98.2216285 47.0388539,98.2142313 C47.307177,98.2123819 47.5717735,98.1476558 47.8102829,98.0256008 L87.9506827,77.538858 C88.5059625,77.2522137 88.8525466,76.6844731 88.8525466,76.0631024 Z M26.7990887,80.0095466 L8.73758581,71.3343967 C7.90466599,70.934944 7.5543552,69.9437097 7.95311323,69.1170646 C7.98851698,69.0486399 8.02578408,68.9820644 8.06864126,68.9191876 L17.1096411,55.6244418 C17.638834,54.8514269 18.6990832,54.6498513 19.4779657,55.1750575 C19.7518789,55.3599893 19.9661648,55.6188938 20.092873,55.9221819 L29.1357362,77.8772831 C29.5084073,78.7168734 29.1245561,79.6988612 28.2785928,80.0687248 C27.8015738,80.2776977 27.2537474,80.2536565 26.7990887,80.005848 L26.7990887,80.0095466 Z"
+                                        id="Fill-1" fill="#1F7CE0" mask="url(#mask-2)"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link ms-3 " aria-current="page" href="Discover.html">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ms-3" aria-current="page" href="#">Watchlist</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link ms-3 " aria-current="page" href="#">Watchlist</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle ms-3" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                More
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li>
+                                    <h5 class="dropdown-header">Account</h5>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Open Bank Account </a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h5 class="dropdown-header">Support</h5>
+                                </li>
+                                <li><a class="dropdown-item" href="#">FAQs</a></li>
+                                <li><a class="dropdown-item" href="#">Chat with Us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h5 class="dropdown-header">Company</h5>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Blog</a></li>
+                                <li><a class="dropdown-item" href="#">Careers &nbsp;&nbsp;<button
+                                            class="btn btn-success btn-sm">Hiring</button></a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <h5 class="dropdown-header"><img src="Images/2.png" alt="" width="15px"
+                                            height="15px">&nbsp;&nbsp;Made with &#9829; in India</h5>
+                                </li>
+                            </ul>
+                        </li>
+                        <button class="btn btn-outline-primary" id="b1" type="submit">Login</button>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Images-->
+
+    <div class="container-lg mb-5" style="background-image: url('Images/3a.png'); background-repeat: no-repeat; margin-top: 120px;">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-dark mt-5 ms-5"><b>Invest in ideas</b></h1>
+                <h1 class="text-dark ms-5"><b>with smallcases</b></h1>
+                <h4 class="lead text-muted ms-5">Build your diversified long-term portfolio of</h4>
+                <h4 class="lead text-muted ms-5">stocks & ETFs</h4>
+
+                <button class="btn btn-primary btn-lg mt-3 ms-5 px-4">Login with Broker</button>
+                <button class="btn btn-outline-primary btn-lg mt-3 ms-2 px-4">Discover smallcases</button>
+
+                <h4 class="lead text-muted ms-5 mt-4">Supported on India's largest brokers</h4>
+
+                <div class="container-lg mt-3">
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="5paisa"
+                        style="text-decoration: none;">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+                            <title>5paisa</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="5paisa" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <image id="Bitmap" x="2" y="1.65" width="20" height="20.3538462"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAxCAYAAACcXioiAAASY2lDQ1BJQ0MgUHJvZmlsZQAAaIHtm2VUVV23x9c+h+5upJQQaRTwke7ulO46dHdId0ornZKKpFLiQ0iIhCCIKCAoaSAKcjf65n3HvePeMe64X94z91hj/s86+6y1ztof5m/MuTYAQlesPDxcESQAoNx8vHQUZZiNjE2Ysd8AAkAESAEfoLOy8faQ1tJSA7D91f+zfZ0D0Lmf4Tkf61+//2+NyNbO2wYA6AqsnWy9bVCwzoO1qI2Hlw+sp2DN5u/jca4/w5rCC14gAAicc+3wWzOca+vfmv/XPXo6srCWAwCHwPqXxtM61w6/NJnpufazcYDHpHOE7+d3s3VygzU8L42EjaOVLQCCC3D/FRTKHdZCGLDm/L3OX0bspG5lw6xr5WZrZ+fBLPi//Mf/A0O5+v51rvOdJbBz09eFPcOv5gTUgRWwAcxAF/ZuwBbYwZcH/FnQxy7A5/xHsu4egV5ODo4+zNLwE7FjVnaz4b3CLMgvIALA+fP9PfT+5K/RIVrSv/fF1AAgcfvs7Kz9733KZgC0pMF7ePz3Po5peBsWAfgzzMbXy+933/k2AUyAB4gBBaAFFwAb4AQ8QBBcA38AKSAPVIAm0APGwBxevSNAAS/gD0JAJIgFSSAd5IACcAeUgxpwD7SCh6AH9INhMAamwCxYBK/BO7AFdsEn8A2cQggIG8KHSCBKiA5igi5CXBAvJASJQuKQDKQIqUHakAF0E7KE7CBnyB3ygQKgUCgKioOSoQwoFyqE7kKVUB3UBN2HOqFH0CD0J/QMeg7NQ6+gVWgd2ob2oM/QMfQTgUTgIAgRZAhqBAOCBcGO4EbwI0QRsgh1hBHCGoFCBCCiEamIfEQFognRjRhGPEesILYRX5EIJBGSDsmOFEJKItWQxkh7pDcyApmCLEDWIB8gB5HTyNfIHeQPDFwMagx2DGEMWQxtDEsMd4wwjBSMYowGjB6MMYwljA8YPzDxMekxuTFvYKphmmG6YYZhpmGWYrZiDmK+wNzA/IaFi0WPxYMliaWDZYvlh5WAVYTVhNWPNYv1HusHNhE2K/ZVbGVsM2xP7BjsfOxG7AHseewPOACHEucyjiSOPo4zTgRODk49Tj/OPM4OLhKXDpcfVxHXDNcHNwm3DLcTdxr3PR7Ao8bjw1PEs8Dzx0vDq8Hrw3uJd4CPh8+GfwPfAN8dPx6/DL8bfxZ/jwCXgI1AgsCIwIsghaCGYJBgmeAbIQUhH6EKoT1hJGExYSfhLOEBESHRZSIFImuicKIiok6iOaJPxCTEPMQqxI7EscTlxP3Er4lPSehJxEiMSPxIckjuk8yQHJKSkgqQapN6kKaTNpNOkx6QkZIJkumS+ZDlkLWTLZAdk9OTi5NbkEeSV5APk29R4FPwUmhT+FLkUfRQvKZEUnJQqlJ6UGZTdlKuUCGoOKnUqbyo8qh6qd5S41LzUetTh1CXU49Q79NQ00jQ2NOk0DygWabFoOWh1acNpa2inaA9omOmU6bzpiuiG6bbo6ell6VH0efRD9DvMFAzyDCgGPIYhhj2GOkZFRi9GEsYRxmPLrBd0LoQcqH2whwTkkmAyZwpmamTaZOZklmW2ZP5LvME8ykLN4sJSwJLB8smKxWrAqsvayXrCzYMNmE2W7ZstidsXy6yXzS4GHex4+LWJbpLqpdCLzVeWmUnY5dj92OvYV/kIOCQ5PDkqOCY58TjFOf05KzgnOfC55Lk8uaq5lq6THxZ7nLA5XuX17ipudW4I7nbuT9eYblieCXlyuCVYx5+HnueYp4ZXjxead4A3mbeTb4LfAZ8qXzDfD/5r/G781fzrwrQCugIJAkMCZwKigh6CtYLrgsxCRkLZQlNCOMKywmHC3cJf7kqcBV1tebqu2ss18yu5V+bEyEX0RJJERkVxRGVF40W7Rc9ExMXCxHrEju+Lnrd/3r79a9/XP3D948Hf3y5cfWG3432G0fiouKB4t3iJxISEhESA5IYkoqSCZLjUsRSOlK5Ui+lGaWtpCult2R4ZLxk2mV+yErJxsiOypHI6csVyr2R55BHyd+X/64grRCvMKlIpWimWKm4oySsFKI0pEyorK9coryhwqcSoNKviq+qp1qi+l5NUC1EbVidVP2mepX6gcYNjTiN55oXNJ00H2hBWupa+Vob2oLa4drjOrQ69jptukBXQ7dId1tPRC9W74U+q76nfp8BkYGZQYPBiaGqYaHhttF1o0SjRePLxsHGYyYMJiiTRzeJb1rebDFFmuqZVpl+M1MxKzLbNZcyzzLfsBC1SLJYsRSwjLFcsOK2CreaseawDraetGGz8bcZt2W29bUdtWOy87EbsWey97EfcWBy8HUYc2Rx9Hd85sTmFOQ05czhHOb8woXbJcpl0VXANd51FSWCSkNtukm45brtuiu633E/8tD0qPGEPI09W73wvWy9er2pvN29R3xYfYJ9Zn35fON91/xu+OX67fur+Ff4/wwwDmgLJAx0DBwIYgwKCJoJ5gmOD34bIhGSH/I5VCu0PgwrzDqsN5wm3Cd8KoI7Ii5iLVIiMj/yS5RWVH00drR1dO8t2ls+tyZjLsfExryJvRF7O/YwTj2uNh4j3iK+K4EywSNhLJEjMSpxOUk0KTtpL1kluSoFSjFN6UglT3VPHU1jT4tMW04XS89J389Qy6jJxMi0zOzJos3yzZrO5s1OzN7Mkcu5m3Oaa5L78DbFba/bk3k8eYl57/MV8isKEAWWBY8KGQuDCxeLxIryio6KDYvbS6hK/Erm7ly7k3vn6K7h3Y5S2tKg0ldl4mV3yqFym/LhCq6KpIq9Sp3KB1W0VaFVa9UK1fU1JDW+NUu1UrVVdYR13nWL9dL1tQ2kDYENb+6p3GtrZGiMadxrMmkaauZrLmjBavFqWWlVbe1ou9SWdR+673F/5YHGg952nvaSh8QPIx4edth2zHUqd/Z2CXRVdtN1p/Vg9gT3HPY69a4+Mno0/Vjl8VCfRF9Hv2D/vQHOgbLBC4P5QxRD6U8InsQPYwxHDJ8+DXp69KfPn4cjHiO7o6jRj2MuY9vjzuPbz1yefZhwndid9Jg8nPKd+jYdPH32PHoGZyblBfmL/Fmm2ao53rn2eYn5pwtaC4sv7V7uL4Ys4SzlvGJ91bwsuTyxYr6y+zpilXS14o3Im7E1i7XPbxPfsbzrXNde396I3ryw2fle//3hVvo27/bEB7ePxB9bdvR2vu0W78nsbe2nH4gdrB2mfBL9tP4584v0l/2vpUe637C+dR67fb/4/dWP7BONU5zToZ+RZ1JnZ2gWQLMAmgXQLPB/xgK6/8AC2zK8Mt4yHTKnsjKycbLP5MjkjORK5NblueW95DsVgIKiQqrCnCKjop3iPcUvShJKsUqTyjTKVsp1yp9VxFXiVKZV6VXtVJtVv6vJq6WrLamzq3up92rgauhrlGrsaF7XjNWc0WLWQml1aWNr62uXae/rSOgk6yzqcun66w7rUerZ6rXpI/R19Ev1DwykDTIM3hgKGEYZPjdiM/IxemJMZexg3GmCZ2Jq0ngT3NS5WXHzq6mSaaHprpmUWZbZhrmYeYr5qoWwRZzFkiWfZbTl/F9IgNM61Hraht0m2GbK9pJtkO2k3SW7ILsp+0v2wfbTDhwOoQ4zjlyO4Y5zTlecop1eOvM7xzkvuwi7JLmsuYq5pru+R0miclE7bvJuRW6f3VXdy91/eOh41HkiPE1gEsDzsvbq8ibzdvYe8KHz8fIZ9WX1Dfad8eP2i/Z75S/sn+y/HiAekBOwG6gQWBJ4FKQZVB10FmwU3ByCE2IV0hlKGuoU2h9GG+YZNhrOGh4UPh3BFREZ8TKSPzIuciXqalRy1Ntosej06I1bN25l3nofIxGTFbMVKxGbFbsVJxGXFbcZfyM+I3494XpCasJa4rXExMSVJMGk2KTFZN7kyOTZFM6UkJTJVLZUP5gIGNM80gbTqdOd03szSDJsMtoz8TLNMpuzkFkGWXVZp9la2eXZRzkqOSU5B7nyuXm5H29L3c66vZn3R15a3tt80fzk/NWCqwUJBSuFQoXxhctFgkXxRcvFQsUJxa9LrpYklazdEbuTfmfzrsTdnLs7pfKlxaVfyzTKqstBuXF5WwVhhUNFfyVDpX/l8yqeqoSq9WqZ6pLqHzXGNe21FLXetdN1AnXpdfv1WvUtDWQN3g2z90TuFdw7bbRsHGriakpp+tRs1Py45VJLSsvnVtPWJ228bXn3EfdR918+kHvQ0n6hPbn9+0OnhwsdSh2dnZc7i7qIuiK7vnQ7d7/u0e8Z65Xp7Xok9KjhMfvj0j6Gvrx+iv70AcKBhEGsweghaChs6ORJ0JPj4YDho6f+MCME/Hk8EjRyOho+hhiLHccbT3tG+axwgnWidlJgsmtKbmpy2mR647n3DDST/oLpRfOszOyLOce5k/nMBa6FvpfGLz8tpi1xL428clzGWa5dUVvZf527Kr66/iZt7fra5tucd/Lvvq7XbphvUmyOv4/dkt462370Ieyj9A7Wzvhuzp7FPvf+94PRw6JPnp+VvrB8Ofn68qjzW8Fx+He7HxonYqccP6nP8NAsgGYBNAugWeD/KS9A/A95gTb5YwUphTiFCUVKRVPFcsUPSkJKwUqDyvjKusqFyu9UeFT8VB6r4qhqqxaqrqvxqgWoDagTqhuql6l/1BDRiNKY0KTVtNVs1jzRUtLK1lrVvqIdqP1Eh0zHQqdB51hXUTdbd02PXy9Mb1yfTt9R/6EBloGeQbnBoaGMYYbhqhG/UYTRlDGzsYdxnwmpiZVJ603kTb2blb9oIN/0g5m4WZrZG3Mh81jzBQtui1CLKUs2Sz/LUStGKw+rIWsaa1frPhsKG0ebHltSW3vbLjtiO1u7Tnsie1v7TgdiBzuHLkcSR3vHHidyJyenPmcqZ5TzkAu9i5fLiCuza4DrJIoDFYaac+N1i3Vbcb/mnua+6SHlkedx4KniWe554qXv1eiN423l3eVD4ePm89SXBaaBWT8+v0S/d/4S/vn+nwI0AmoDMQLNAzuDKII8gsaC2YMjg5dDREOyQ/ZDVUOrw5BhFmHd4dTh3uGTEdwR8RHvIqUiiyKPo/SjWqIJo52in9xivRV2azHmWkxmzF6samx1HDLOMq4nnibeN346gSchMWEjUTbxTuJJklHSg2TSZLfkMZgCbqW8SZVILUz9lqaf1pZOko5KH8vgzIjJeJspnVmSeZJlktWRTZXtkz2TI5CTnrObq57bcBvvttPtP/M48+LyNvIV8qsKsArsC4YL2QtjCzeLFItqinGLnYvHS3hK0kr27+jcuX+X+m7g3VelkqVlZZhljmXj5fzlWeXfKkzhqH+pMqlyv0q/qruapTqueqdGr6a7lrU2sfagzriuv/5yfWb9jwa7hol7ovfKGgkb/RvXmjSaOpsvNWc0/2xxaVloVWhta2NtS287u+/2KyfwqJ2v/e5D0ofRD790OHYsdWp0DnRd66rvZu7O6cHviez51uveu/nI4tH8Y63HI32yfb39Iv2tA1cGqgdZBouGqIeynhA9SRzGGo4a/vk0+FdO4GDEfWRn1GV0a8xhbGPcbnz9me2zdxN2E+uT9pPvp5ymPky7Te8/935+NBM8c/YiehZnNnWOYq5gnmW+ZoF/oeOl1MuRRd3F5SWHpcNXYct4y7dXLq60vpZ6Pblqvrr7JmyNZK30rfDbp+9M3u2t39qg3WjaVNhcee+3RbxVuy27/fpD0Efqjw92dHcOdzP2BPdm9v0OaA96Dq0+YX+691nv88mXyq+aX78fVX3TPQbHTd/NfxD/6D/xPuU4XfqZcaZ4dva71vKXegb0D5WN/0L/rsecG801ABphrwM36QgAWuHGLgUAEew1Ya8nBRBCQn9rSJg1EH8ro5zPhYAvJHxhwASCBbABDswh+L+qW8SAFJADSkAFaAA9YARMgAVcBOyAC3ADXiAAhIEIuA7EgTSQA4pAFWYUHWAATGBKsQb2wAW4A28Q8C+cUgHqQBN4ALpBH0wp4+A5WAArYB18AIcwoZxBWBAhRA7RQ6wwm/DDZCIJc4kGTCXmkD3kBvlB4TCNpEF5UClUC7VC3dAQTCDzMH1sQZ+gEwQWggRBh7iI4EXTBpo20LSBrkKgqxDoKgS6CvHPVQh0/EfHf3T8R8d/dLYBnW1AZxv+/bIN6PiPjv/o+I+O/+iTB+iTB+iTB/9+Jw8A8LYX+v1WBkRUDwA2y9nZoTsAuHA7gfngh9bZ2WkRAMgXADx6//sdj3PDIgGgkVxnrdX0+c8wt//8TsZ/AFYPo+Trc2hcAAAOeElEQVRoBdWaWY8cZxWGT1dV78tMz+5lPN5JYiCLkygCQRAIxBVX/AF+Ezf8gUhBXIAEXCCkSCQRIKIkXKBEie3YnsSepWfvnt6rivc51R1ubMdLguTPbnfX0vW955z3vOd8Xzv3bvmHfwr6I0tKebPhyHJhZGkSWy4NLA5zFo7GluZ1LR6Z5SJLgtTCOLFxGFqka3E+siCOdS2wxEyfE50L9b3YEr0HSWqBzo+DQOdGXz4rlwst1oVwNL2feSIzza2naB7mjv1ZAc/SfIGlxl9wRVyLgqPc3wo/SFPd/NQNQQ5GySgweeapHAQjDA7ke316SgfYgzR9Sg2A9Uq6IBeET6f/oZD4E6A4T+1IEpMGKom/ikZYK8m0RC/PmYx2OZuqF3ooCYwUzemp/4NXUmGPcgJ/zyyQfifDoWCMLRC4wuqSBedXLDi1YGm9LJ2WVkvX491DSzcPzG5tmW0dWG6siIZ5afo3T03qQpS6yyYm6C1RMbN0qJqVt8rLl6zys1cs+M45Sy+dtkExtJE8nMq4OE30nqjgyVAZkuweWXrjjiXv/MfCdz+y6O6hRyQlKt/gyL1d/lEay9NJPFBGR1a8fMJqP31VwF+18bNn7GA0sFGvb73DIwEdW6lUss7RkZWrVevr/PFxx6rVmskEC8pFRSu08dae2V8/sNof/mXFVtviYkHU+vq5Jee1cm/Z1TS/1LTaj69a45c/tujFS3YYJrazsWXd/QMrFYo2MzNr29tbVm80bKQIjeTx+YV5O5JRg+HA6rWa7e7uWa/btVqjbr2RIlgp2WB9w8pvvmOLb30iWoWWRF9j0ZQ/VIlbueu/fiMtvf6ijU/N2/bmlu3e2RTtx9aYmbF6va4WJ3BP9/o9i6JIHj+2YrFovX7fDvb2bGl5WbfH1lZUarWqjdUXtdtt6+q+anPGOuqhwr+8b6fe+KcV+ll/9LUxKrVW7sbW3bR1Z8MOWjtWlLebc02rlMvq60YCNrZEPHfOC1gcq+HS7JyPdZyocSOFdnd3bSx6rZxY8ai0O0c2q6hhZF+vrgQq/uBTu/ybt63UpQF88rxINa8awVawee0zi5SU586ds9W1M+5dwDvwibyiU/5H6GOBnhpFFY/l/ZooNNuctSNF4fBQSqQ/oaI1VG4NZEADtX7xon38q9dsWFDxiSei8QShyPEIdaXBmbU1W1hYoCTLi2p3AT15PmmH96cv5uMcw8GnRCV7kRcYwygrghjTPe5aXq14oZC3mnrn+IXz9vEvriiEuu/JbfC5AvgLiC+B+4MFWoZM5+ATXufl9FH1TlxGuZLdhZGcK5XK1h8MnDpDJXOzOWd7O3t2cHCgSOSt/foVu/38kuUHFMUnHPRCgfejCjprAtyrF5A8EBgBUDdGdJEBeDTUYgT+TyOTECX9wRGeN+SGjiuVim23tu3w6NCjUpf0NstVu/3z56xdE630vScZLHoCvEpb6iAAqmMd6jUFruKmcwCGClUpzTQao/FIMjr8MqkBQxR4kStQEtktqnaQJ7du37bcUJX99JLdfGHZwuET9GFyNLmkCNALMfXUG5jDH53RP8510awg6azKgweqDfCdO3IqTkRoqFowHGSGTI3FEckkcjSMd+/ezXJBhhCFjdfO2lEj//hRELaEJHbuwx6B4eU0mgDHFBKzVCq6xm9ubNqBVCYzLzMOK1GdWCBjZFeeT/SZepBFQFVeVIFegVp3vt/e3bfcypy1VhsWjqHbYwwioOfK/Y7eA+DGTJ6ls06DotoAwn9b4V9fX3cgRIHCBd/5PnkUKpJEDENG1AkZrkOnm+eFIoIytbZbiuDQapWaba3WsjBP5nykNyIg9JobqBpEQG9ZRLKcADzV+Nq164b3186uqa3IKjTAD/b37ahNO4GXxXuBx/t4g8dSAzgmJ1y9XO0SG0ilykFkO5eWniiZQawoKIQT8NN3ErBQEHj1Pp9+es1293bt/IXzJIwnJWCL0ErG4YB2u+MySeGCQiTuWFW7r/aj0+m4WlHFPcy6n0LZ6xxbutiwuycrFj0ujeQop1AWAzFbHCDxigLfmKnbjRs3vLJeuHDBqUPyusrIADzKi+6zXC65cfQ/RARDMtqk7m2OyQGnlloOPDcc9NWyVOzWxVlLJiSQhY84FAE8Q7inigJ4aHP9+g3b3tqy8+cvqJEMPSI0cSErLw04DqgscbURpuhMr3e7x8qRtqsT0STpyY9E9w9lNDlA1GpR0Q7PzdvBTEGbZWTMo40cSSyv43gfZVXRSqVqdzc2rKsQX736shcgrtOUdTRpv9dzQLkQ+c3UJZNOgRMwzlGNA12HSjgGY7McoPhlNQJ6hYpEYXnePr8481hqRCGL5MUc3oPfeJpWmL6oOT+nwnPL2uLwQKBJWiyl/8frNGuR7odWA9UAosh1ipsrkICWRK2RKEOdyFqWTLWYh61FjFqcnbPNZ5bsmQ9bmuHRBjIfKemSOIyDvKgB+M3NTesJMABLxZKVF8qekLTL3mILsCen+M59PtQadrWYCbUMJRoAyzyeqRLnKHgAh4JEBelFpRZnGrZ/dtH2Fyu2tNWzcV6RfcgBcSLhVxsae3+D8iwvr2SJKu6yiBlK8lxZZACFyRNUXAYMdCACgKVYdaXzeW3QZnI6EQUM0v1ENdT6OJIBfNcVTfmXl9H1xQXb+PayLd/9zOwRDIAVASF3DiOnUAlgEyrwTp31JNS/Xm0FBtAjKQt6jipBJe7FkI4i49Ea9rOc0PcL+YISvCCwkRuYV0+Fs3hh3Kxai6MrJ61XDLRJ8JDu120gkwpNE0xKopOKrIeYxwAK47jHC5K8jL6TA/6uz/T8RSUt8otX+6IShujQqzPLUMCjUGwI5GVM9sqMwBH1UsXs7LLt01po2/xhRwoVveg4PZhU/haI6ZgagPxlXpW+QxkdE4WhVMYbOSVpQW02n2m5MRDABS1R8TKfi8qnKMq8zjlf6MgYjOVzY7Zpey+vOS2n83/VO1s6AZqcUULqIWBwlRfFBgNIPvg99TiJjNcyacyMQF6d0wIDaCiXeT0DDEAiQVNIV4sBkc5Nz2MwNBo8f9aO6+pQH7ImQO/IeQyX5PloqAQrCbzzKKMQixbAY+RA1RPwJDLv/f7A80DPESgBUkJSlYkWCkY0AU5eIbPMEaojddnGSZqHPzy7qYaxc+aEHV1ettr72iCbFMwHRQHKR+wcwF9WWagE3mEiBhEgxADinapKHaCoYUzWxMUOnM2talX5IA/3UvJCBgi1G6Dn8TkDrneiLPC017zjJFKSrZzelVMWv7+u46zig+N+w2U06xiznpzqiQG88IzwO9/hNrtw3EvO9AEv72NoWf1MQ00fwCuVsldhPOqOkOdps7mPFwZwjAFyT2YIFV0DsZhRF7D16mXr/f4DqwwkIDDhQUOXo4PDQ2+q0Ho8guSRkEyGzo8ny0Y8TrFiY4tooCjsPgAMz2EAUUAii32MqYg6oo8myQoX1MH78jwG6HzWynODUOp8UefrF9es88wJq76nKPDD4wMGSRwdabeALpJFC5qOhwAWyTOoDZ7n+rEaNFpjPMeaAAM8Urq/2Wx6LtB+R6Jh97hnZQyA71AHsLovA54d6zF+jYvgd8XTyUa9Ybvf+5bF793U2QcbgIxGrZ0dfxAeO5aHSVB6fUDiaXbZ9rQeoN8piyI1eRkDMQAlISmbkkDWDEQPL6M2rJ8BBV3cwXifT/6XjfGMthl8YdV57q8oap3XX7Dj3/7D6q2u/1Srq/ceRIAJ6Wm82+y0tcrac2+++NJLdqzjO1/c8UQ8deq0FjA1UQU9Dz1xAy2qC4WMSjiA/gl1KslAen0iivf15gN5zeg0USNdpBPIhlugDtVsdvWk7b9y3mp//FBBeMA2JBGoamKUgoylc2TH+eOPP/JjgDz33BWbU2eKvntCTpJOhLCxduZmFHLaaNYQ9DlEYkZUIkpQUA/y3oceKdQyEodNN8GgJDvabH7RpuhWYFhDxh/9RBvOf/43P2AY+6D3GxGJVy7jqewujIGHVXmb3n/t7Dl5XQsOOCy6TL2Y0SGnfaKKjQ/H7vFIILe0DT83P+9JrVbXwZLYJP9oeCyqpFoobXve0NQh4VzPjf+HMpIt9Zeetf7agtVvaxekcP8oRIReRipSarQkn5VqxRYXlxz8tU8/8WK1uLjoqsJ1GjcSEkNmGto+18KHYggY5BOjyydPelXHpTgG6UWCSXLeUa0TJ07q/qHTl+fxfQZ5wD7S7MqSffH9Zyy9+bbOlv3avf6JpmpBp8gCBDUi3Dst2oPQ9nZ3HDDJzXWUh54eqSXxDvcPM3nUQWun5U4ABNyeRpWq7F6WMcxHO8IcGIBweDcsyZ4OqCuFsPD179rwzb9b4X400nnlQDXRRAEdYkk/EfHbAC0CxQoAvHeUzICiJvBwvDWzsiJ1UsLrXio4vGaviB88UKyp93lGRz9DkV/jUdsTnZ7rtvaY2COamZ3JckJ1iAGFfZdP8l26dMa6p5tWXIdG96jMcmCkRXwQyhtugOQPoCxkmAQvdY7VMve6Gf91De+tCDxG7muDi4ZMlmr3YkffnQBQ5YYWgOd5Hl0Vupu3btm88gPO4gyeQ7LTkngG6H5XJR3QARf1C8/+xSX9Aqrf3O4zIkKL/GXUCJ2T031OJsKzva5+XhJtUIr58rwDW/983Y1mnUC9uHPnjp1ZPeOFj7lQG75PPagqr1iurq6uWln1w5tAGUke4RDh9oEDvCkUG4b6pZTCl6w0VTG0F8v/zeE/3Lg0T+pImtajMJf7nb6f88qrh2X7mZkHeXJO3ETGWAfjrYU5LcK1Uau5vBUoygFbmxvWUO4wORN4BRYaWomiori9vS0VotZ09d+OYut0O1bQ2iCWDF++dEnPJ4Gz79Fas2eUKgLaNrBoToucRe1azM1afDy0/GwpjdujXK6s7wwGh/8F18oV2gDEAowAAAAASUVORK5CYII=">
+                                </image>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Angel one"
+                        style="text-decoration: none;">
+                        <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.83815 2.61143C5.79549 2.68229 5.79549 2.77143 5.83815 2.84304L13.1454 15.066C13.1858 15.1338 13.2597 15.1757 13.3389 15.1757H15.7891C15.9644 15.1757 16.0726 14.9852 15.9827 14.8344L7.35812 0.405774C7.3124 0.329586 7.20116 0.329586 7.15545 0.405774L5.83815 2.61143Z"
+                                fill="#11AF4B" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.75444 5.22095H6.98869C7.07555 5.22095 7.12964 5.31466 7.08621 5.39009L6.46908 6.45901L5.85196 7.52794C5.80853 7.60336 5.70034 7.60336 5.65692 7.52794L5.03979 6.45901L4.42266 5.39009C4.37923 5.31466 4.43333 5.22095 4.52018 5.22095H5.75444Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.28007 7.69995H5.51432C5.60118 7.69995 5.65527 7.79366 5.61185 7.86909L4.99472 8.93801L4.37759 10.0069C4.33417 10.0824 4.22598 10.0824 4.18255 10.0069L3.56542 8.93801L2.9483 7.86909C2.90487 7.79366 2.95896 7.69995 3.04582 7.69995H4.28007Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M2.79667 10.218H4.03093C4.11778 10.218 4.17188 10.3117 4.12845 10.3872L3.51132 11.4561L2.89419 12.525C2.85077 12.6004 2.74258 12.6004 2.69915 12.525L2.08202 11.4561L1.4649 10.3872C1.42147 10.3117 1.47556 10.218 1.56242 10.218H2.79667Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M1.3621 12.8032H2.59636C2.68321 12.8032 2.7373 12.8969 2.69388 12.9724L2.07675 14.0413L1.45962 15.1102C1.41619 15.1856 1.30801 15.1856 1.26458 15.1102L0.647455 14.0413L0.0303271 12.9724C-0.0131004 12.8969 0.0409934 12.8032 0.127848 12.8032H1.3621Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M4.28996 12.8032H5.52421C5.61107 12.8032 5.66516 12.8969 5.62173 12.9724L5.00461 14.0413L4.38748 15.1102C4.34405 15.1856 4.23587 15.1856 4.19244 15.1102L3.57531 14.0413L2.95818 12.9724C2.91476 12.8969 2.96885 12.8032 3.0557 12.8032H4.28996Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.25676 12.8032H8.49101C8.57787 12.8032 8.63196 12.8969 8.58853 12.9724L7.97141 14.0413L7.35428 15.1102C7.31085 15.1856 7.20266 15.1856 7.15923 15.1102L6.54211 14.0413L5.92498 12.9724C5.88155 12.8969 5.93565 12.8032 6.0225 12.8032H7.25676Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M10.2244 12.8032H11.4587C11.5455 12.8032 11.5996 12.8969 11.5562 12.9724L10.9391 14.0413L10.3219 15.1102C10.2785 15.1856 10.1703 15.1856 10.1269 15.1102L9.50976 14.0413L8.89263 12.9724C8.8492 12.8969 8.9033 12.8032 8.99015 12.8032H10.2244Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M5.79313 10.218H7.02739C7.11424 10.218 7.16833 10.3117 7.12491 10.3872L6.50778 11.4561L5.89065 12.525C5.84723 12.6004 5.73904 12.6004 5.69561 12.525L5.07848 11.4561L4.46136 10.3872C4.41793 10.3117 4.47202 10.218 4.55888 10.218H5.79313Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M8.68229 10.218H9.91655C10.0034 10.218 10.0575 10.3117 10.0141 10.3872L9.39694 11.4561L8.77981 12.525C8.73639 12.6004 8.6282 12.6004 8.58477 12.525L7.96765 11.4561L7.35052 10.3872C7.30709 10.3117 7.36119 10.218 7.44804 10.218H8.68229Z"
+                                fill="#FF7300" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M7.29655 7.69995H8.5308C8.61766 7.69995 8.67176 7.79366 8.62833 7.86909L8.0112 8.93801L7.39407 10.0069C7.35065 10.0824 7.24246 10.0824 7.19903 10.0069L6.5819 8.93801L5.96478 7.86909C5.92135 7.79366 5.97544 7.69995 6.0623 7.69995H7.29655Z"
+                                fill="#FF7300" />
+                        </svg>
+                    </a>
+
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" style="text-decoration: none;"
+                        data-bs-content="HDFC Securities">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+                            <title>hdfc</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="hdfc" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="HDFC" transform="translate(2.000000, 2.000000)">
+                                    <polygon id="Fill-1" fill="#ED232A"
+                                        points="0 10.9737307 0 19.9485274 8.9768811 19.9485274 8.9768811 16.4593245 3.49128723 16.4593245 3.49128723 10.9737307">
+                                    </polygon>
+                                    <polygon id="Fill-2" fill="#ED232A"
+                                        points="0 0 0 8.97979919 3.49128723 8.97979919 3.49128723 3.49128723 8.9768811 3.49128723 8.9768811 0">
+                                    </polygon>
+                                    <polygon id="Fill-3" fill="#ED232A"
+                                        points="10.9714796 0 10.9714796 3.49128723 16.4595746 3.49128723 16.4595746 8.97979919 19.9483607 8.97979919 19.9483607 0">
+                                    </polygon>
+                                    <polygon id="Fill-4" fill="#ED232A"
+                                        points="16.459658 10.9737307 16.459658 16.4593245 10.9715629 16.4593245 10.9715629 19.9485274 19.948444 19.9485274 19.948444 10.9737307">
+                                    </polygon>
+                                    <polygon id="Fill-5" fill="#004C8F"
+                                        points="6.98299133 12.9675787 12.9675787 12.9675787 12.9675787 6.98299133 6.98299133 6.98299133">
+                                    </polygon>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" style="text-decoration: none;"
+                        data-bs-content="Kotak Securities">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+                            <title>kotak</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="kotak" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <path
+                                    d="M1.16547653e-14,11.6789405 C1.16547653e-14,5.97909993 5.37208792,1.35888278 11.9998394,1.35888278 C18.6279216,1.35888278 24,5.97909993 24,11.6789405 C24,17.3794425 18.6279216,22 11.9998394,22 C5.37208792,22 -1.77635684e-15,17.3794425 -1.77635684e-15,11.6789405"
+                                    id="path33091" fill="#1F4578" fill-rule="nonzero"></path>
+                                <polygon id="path33093" fill="#ED3338" fill-rule="nonzero"
+                                    points="10.5431181 4.6724277 13.3305179 3.75117996 13.3442223 18.8231589 10.533147 19.7650766">
+                                </polygon>
+                                <path
+                                    d="M12.1978916,14.0722395 C10.9862334,15.5319568 9.8152631,17.0243473 7.62167975,17.0243473 C4.52286863,17.0243473 3.05514605,14.0288958 3.05514605,11.5245627 C3.05514605,9.11859895 4.20311186,6.27018144 7.22024472,6.27018144 C8.52959167,6.27018144 9.79125677,7.07105727 10.5411144,7.91761128 L10.5392241,9.960484 C9.91239423,9.53770792 8.5063509,9.12293709 7.58843949,9.10825921 C5.67460552,9.07593572 3.98649723,9.90513712 4.01683595,11.794634 C4.03649468,13.0953141 5.32451002,13.9802121 6.60685458,13.9802121 C8.57103568,13.9802121 9.76002018,12.186079 10.7549409,10.8240504 C11.0320155,10.4686243 11.8148961,9.42234521 11.9365912,9.25497192 C13.0412132,7.71222482 14.3195505,6.30252383 16.5127935,6.30252383 C19.0958087,6.30252383 20.5458574,8.38573475 20.9566398,10.5299728 L19.791671,10.5299728 C19.3228765,9.83479101 18.4206354,9.4093402 17.5307282,9.4093402 C15.5008604,9.4093402 14.2882099,11.2765036 13.2736116,12.6511969 C13.2736116,12.6511969 12.4837371,13.7281456 12.1979956,14.0722395 L12.1978916,14.0722395 Z M21.0242262,12.719218 C20.7624815,14.8754498 19.5538383,17.052361 16.9128014,17.05703 C15.3720581,17.0598654 14.1670724,16.0040782 13.3325216,14.7127454 L13.3325216,13.2173494 C14.3767971,13.73582 15.3520495,14.2906309 16.5357035,14.3086357 C17.9934172,14.3302792 19.3114311,13.7691548 19.8565826,12.719218 L21.0242262,12.719218 Z"
+                                    id="path33095" fill="#FFFFFF" fill-rule="nonzero"></path>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Upstrox"
+                        style="text-decoration: none;">
+                        <svg width="24" height="24" viewBox="0 0 24 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M19.3356 0.66571C17.7717 0.66571 16.7454 1.25218 16.11 2.083V0.861208H14.2529V13.6657H16.11V8.68074C16.7943 9.56044 17.8206 10.0981 19.3356 10.0981C21.9259 10.0981 23.9296 8.19204 23.9296 5.45518C23.9296 2.66946 21.9259 0.66571 19.3356 0.66571ZM19.1401 8.43639C17.3807 8.43639 16.11 7.11684 16.11 5.45518C16.11 3.79354 17.3807 2.37623 19.1401 2.37623C20.8995 2.37623 22.0725 3.79354 22.0725 5.45518C22.0725 7.11684 20.8995 8.43639 19.1401 8.43639ZM4.57621 5.69956C4.86945 5.50406 5.1138 5.30856 5.35818 5.06421C5.79803 4.62436 6.189 4.08677 6.48223 3.54916V5.94391C6.48223 7.45896 7.31305 8.28978 8.68148 8.28978C10.0988 8.28978 11.2228 7.41008 11.2228 5.94391V0.861208H13.08V9.90256H11.2228V8.77851C10.9296 9.21836 10.0499 10.0981 8.38825 10.0981C5.89576 10.0981 4.57621 8.53413 4.57621 6.33488V5.69956ZM0.470947 6.72587V4.91759C1.54614 4.91759 2.62132 4.47774 3.40328 3.74466C3.79425 3.35369 4.08748 2.91384 4.28298 2.42511C4.47848 1.93638 4.57621 1.39879 4.57621 0.861208H6.43335C6.43335 1.64315 6.28673 2.42511 5.9935 3.10931C5.70027 3.8424 5.26042 4.47774 4.72283 5.01533C3.5499 6.13941 2.03485 6.72587 0.470947 6.72587Z"
+                                fill="#5A298B" />
+                        </svg>
+                    </a>
+
+                    <a href="#" id="btn" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-content="Zerodha"
+                        style="text-decoration: none;">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+                            <title>zerodha</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="zerodha" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Zerodha" transform="translate(2.000000, 2.000000)" fill="#387ED1">
+                                    <path
+                                        d="M16.9492163,4.85299813 C15.3282297,2.7513605 13.4341271,1.11709165 11.3665252,-7.72715225e-14 L19.9615175,-7.72715225e-14 L19.9615175,10.1216197 C19.1784188,8.20787037 18.1678618,6.43303116 16.9492163,4.85299813 Z M4.55829845,1.07832412 C12.47645,1.07832412 18.9352155,9.51448297 19.0829804,19.9615175 L-4.95603558e-13,19.9615175 L-4.95603558e-13,2.048481 C1.43448183,1.4186815 2.96609003,1.07832412 4.55829845,1.07832412 Z"
+                                        id="Combined-Shape"></path>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+
+                    <!-- Button trigger modal -->
+                    <a href="#" id="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        style="text-decoration: none;">+2</a>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Login with your broker</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row" style="align-items: center; text-align: center;">
+                                        <div class="col-3">
+
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row mt-3">
+                                                <div class="col-4 "><img src="Images/7.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Angel One</div>
+                                                <div class="col-4"><img src="Images/8.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">5 paise</div>
+                                                <div class="col-4"><img src="Images/9.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">hdfc Securities</div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-4"><img src="Images/10.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Zerodha</div>
+                                                <div class="col-4"><img src="Images/11.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Upstox</div>
+                                                <div class="col-4"><img src="Images/12.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Kotak Securities</div>
+                                            </div>
+
+                                            <div class="row mt-3">
+                                                <div class="col-4"><img src="Images/13.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Axis</div>
+                                                <div class="col-4"><img src="Images/14.png" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Groww</div>
+                                                <div class="col-4"><img src="Images/15.jpg" class="img-fluid" alt=""
+                                                        width="54px" height="54px">Icici</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+
+                                        </div>
+                                    </div>
+                                    <center>
+                                        <h5 class="lead text-muted mt-4">Don't have a broker account?</h5>
+                                    </center>
+                                </div>
+                                <div class="modal-footer" style="margin-right: 55px;">
+                                    <button type="button" class="btn btn-primary px-5 me-5">Open an account
+                                        online</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Scruipyt Tag for PopOver-->
+
+                    <script>
+                        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                            return new bootstrap.Popover(popoverTriggerEl)
+                        })
+                    </script>
+
+                    <h5 class="lead text-muted mt-4 ms-4">Don't have a broker account? <a href="" class="text-primary"
+                            style="text-decoration: none;">open Bank Account</a></h5>
+
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!--Videoes-->
+
+        <div class="container-lg" id="cont">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <h1 class="text-dark"><b>A smallcase is a basket of stocks that reflects an idea</b></h1>
+                    <h5 class="text-muted">smallcases are portfolios of stocks or ETFs, weighted intelligently to track
+                        a theme, strategy or objective</h5>
+
+
+                    <video autoplay="" playsinline="" src="Video/smallcases Hai Kya.mp4" poster="Images/17.png"
+                        type="video/mp4" width="500px" height="500px" loop="">Sorry, your browser does not support
+                        embedded videos,</video>
+
+                    <div class="row" id="row">
+                        <div class="col-3"><img src="Images/16.png" class="img-fluid" alt="Images" width="110px"
+                                height="110px" style="border-radius: 10%;"></div>
+                        <div class="col-9">
+                            <h6 class="text-primary mt-2"><b>Investing Insights</b></h6>
+                            <h5 class="text-dark mt-1"><b>Why Investors should Invest in smallcases</b></h5>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-5 ms-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="Images/18.png" class="img-fluid" alt="">
+                            <div class="row mt-4">
+                                <img src="Images/19.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="row mt-4">
+                                <img src="Images/20.png" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-8">
+                            <h4 class="text-dark mt-3"><b>Simple to understand</b></h4>
+                            <p class="text-muted ">smallcases are modern investing products based on simple ideas you
+                                can understand.
+                            </p>
+
+                            <div class="row" style="margin-top: 120px;">
+                                <h4 class="text-dark"><b> Managed by professionals</b></h4>
+                                <p class="text-muted">smallcases are created by India’s leading finance experts & backed
+                                    by solid
+                                    research.</p>
+                            </div>
+
+                            <div class="row" style="margin-top: 100px;">
+                                <h4 class="text-dark"><b>Designed for you</b></h4>
+                                <p class="text-muted">smallcases are fully customizable. Edit your smallcase
+                                    constituents any time or
+                                    create your own smallcase.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Card Slider-->
+
+        <div class="container-lg mt-5" style="background-image: url('Images/25.png');">
+            <div class="row mt-5">
+                <div class="col-4"></div>
+                <div class="col-4 mt-5" style="text-align: center;">
+                    <h6 class="text-muted mt-5">Ideas trending among investors &#9889</h6>
+                    <h3 class="text-dark"><b>Popular Investment Ideas</b></h3>
+                    <h6 class="text-muted "> Bullish on banking? Enjoying superfast internet? Worried about rising
+                        petrol prices?</h6>
+                </div>
+                <div class="col-4"></div>
+            </div>
+
+
+
+            <div class="container">
+                <input type="radio" name="dot" id="one">
+                <input type="radio" name="dot" id="two">
+                <div class="main-card">
+                    <div class="cards">
+                        <div class="card">
+                            <div class="content">
+                                <div class="img">
+                                    <a href="#123"><img src="Images/21.png" alt=""></a>
+                                </div>
+                                <div class="details">
+                                    <div class="name">IT Tracker</div>
+                                    <div class="text-muted">Companies to efficiently track and invest in the IT sector
+                                    </div>
+                                </div>
+                                <div class="media-icons mt-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h6 class="text-muted">Min Amount</h6>
+                                            <h6>₹83,138</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="text-muted">6Y CAGR</h6>
+                                            <h6 class="text-success">27.52%</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-warning">Med.Volatility</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="img">
+                                    <a href="#"><img src="Images/22.png" alt=""></a>
+                                </div>
+                                <div class="details">
+                                    <div class="name">Digital Inclusion</div>
+                                    <div class="text-muted">Companies spearheading and benefitting from the digital
+                                        revolution in India</div>
+                                </div>
+                                <div class="media-icons mt-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h6 class="text-muted">Min Amount</h6>
+                                            <h6>₹17,918</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="text-muted">6Y CAGR</h6>
+                                            <h6 class="text-success">17.02%</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-danger">Hig.Volatility</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="content">
+                                <div class="img">
+                                    <a href="#"><img src="Images/23.png" alt=""></a>
+                                </div>
+                                <div class="details">
+                                    <div class="name">Rising Rural Demand</div>
+                                    <div class="text-muted">Companies that stand to benefit from increasing rural
+                                        consumption</div>
+                                </div>
+                                <div class="media-icons mt-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h6 class="text-muted">Min Amount</h6>
+                                            <h6>₹41,495</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="text-muted">6Y CAGR</h6>
+                                            <h6 class="text-success">14.83%</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-warning">Med.Volatility</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div class="card">
+                            <div class="content">
+                                <div class="img">
+                                    <a href="#"><img src="Images/24.png" alt=""></a>
+                                </div>
+                                <div class="details">
+                                    <div class="name">Affordable Housing</div>
+                                    <div class="text-muted">Companies participating in and benefiting from affordable
+                                        housing projects</div>
+                                </div>
+                                <div class="media-icons mt-5">
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <h6 class="text-muted">Min Amount</h6>
+                                            <h6>₹35,044</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <h6 class="text-muted">6Y CAGR</h6>
+                                            <h6 class="text-success">14.29%</h6>
+
+                                        </div>
+                                        <div class="col-4">
+                                            <button class="btn btn-outline-warning">Med.Volatility</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <label for="one" class=" active one"></label>
+                    <label for="two" class="two"></label>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Cards-->
+
+        <div class="container-lg mt-5">
+            <div class="row mt-5">
+                <div class="col-3"></div>
+                <div class="col-6 mt-5" style="text-align: center;">
+                    <h2 class="text-dark"><b>There is a smallcase for everyone</b></h2>
+                    <h6 class="text-muted"> Looking to start with a small investment or thinking of low volatililty?
+                        Choose from a diverse menu</h6>
+                </div>
+                <div class="col-3"></div>
+            </div>
+
+
+
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <img src="Images/26.png" class="img-fluid m-4" alt="..." width="100px" height="100px"
+                                style="border-radius: 10%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Low Volatility</h5>
+                                <p class="card-text text-muted">Go for stable returns at low volatility levels.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <img src="Images/27.png" class="img-fluid m-4" alt="..." width="100px" height="100px"
+                                style="border-radius: 10%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Thematic</h5>
+                                <p class="card-text text-muted">Explore portfolios on disruptive ideas & long-term
+                                    trends.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <img src="Images/28.png" class="img-fluid m-4" alt="..." width="100px" height="100px"
+                                style="border-radius: 10%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Low Inv.Amount</h5>
+                                <p class="card-text text-muted">Start small budget investments for less than ₹500!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card" style="width: 18rem; height: 18rem;">
+                            <img src="Images/29.png" class="img-fluid m-4" alt="..." width="100px" height="100px"
+                                style="border-radius: 10%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Trackers</h5>
+                                <p class="card-text text-muted">Take exposure ti important sectors of the economy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!--video-->
+
+                <div class="container-lg mt-5">
+                    <div class="row">
+                        <div class="col-5" style="text-align: center; margin-top: 280px">
+                            <h2 class="text-dark"><b>Curated by India'stop investment managers</b></h2>
+                            <h6 class="text-muted mt-3"> smallcases are created & managed by leading professionals
+                                who are SEBI registered research analysts and investment advisors</h6>
+
+                            <button class="btn btn-primary btn-lg mt-4">View All Managers</button>
+                            <a href="https://www.youtube.com/playlist?list=PLW7s8_EjCL42B3echyDqSAoGCxA6uViiB">
+                                <button class="btn btn-outline-primary btn-lg mt-4">Watch Case by Case</button></a>
+                        </div>
+
+                        <div class="col-7">
+                            <video autoplay="" playsinline="" src="Video/creator-scroll.mp4" type="video/mp4" loop=""
+                                width="800px" height="800px">Sorry, your
+                                browser does not support embedded videos,</video>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- video and Table -->
+
+                <div class="container-lg mt-5">
+                    <div class="row">
+                        <div class="col-6">
+                            <h4 class="text-muted ms-5">Everything you need to invest</h4>
+                            <h1 class="text-dark ms-5"><b></b> Simple, quick & delightful investing for you</h1>
+
+                            <table class="table table-lg table-responsive-lg ms-5 mt-5">
+                                <tbody class="mt-5">
+                                    <tr style="height:80px" id="tr">
+                                        <td onclick="document.getElementById('myVideo').src='Video/1.mp4'">
+                                            <img src="Images/30.png" width="30px" height="30px" alt="">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <span class="lead" id="sp"><b>Buy multiple stocks in 1
+                                                    click</b></span>&nbsp;
+                                            <p class="lead text-muted ms-5 mt-2">Place orders for up to 50 stocks in 1
+                                                click as a smallcase and save time</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height:80px" id="tr1">
+                                        <td onclick="document.getElementById('myVideo').src='Video/2.mp4'">
+                                            <img src="Images/31.png" width="30px" height="30px" alt="">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <span class="lead" id="sp1"><b>Track smallcases anytime, anywhere</b></span>
+                                            <p class="lead text-muted ms-5 mt-2">Track & manage seamlessly with a real
+                                                time index value, inclusive of corp. actions & dividends</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height:80px" id="tr2">
+                                        <td onclick="document.getElementById('myVideo').src='Video/3.mp4'">
+                                            <img src="Images/32.png" width="30px" height="30px" alt="">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <span class="lead" id="sp2"><b>Invest regularly with SIPs</b></span>
+                                            <p class="lead text-muted ms-5 mt-2">Invest in a disciplined manner by
+                                                starting a SIP on your smallcase for every week, month or quarter</p>
+                                        </td>
+                                    </tr>
+
+                                    <tr style="height:80px" id="tr3">
+                                        <td onclick="document.getElementById('myVideo').src='Video/4.mp4'">
+                                            <img src="Images/33.png" width="30px" height="30px" alt="">
+                                            &nbsp;&nbsp;&nbsp;
+                                            <span class="lead" id="sp3"><b>Create your own smallcase</b></span>
+                                            <p class="lead text-muted ms-5 mt-2">Be your own fund manager & invest in
+                                                your ideas by creating a smallcase of up to 50 stocks</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-6 ">
+                            <video autoplay="" playsinline="" src="Video/1.mp4" id="myVideo" type="video/mp4" loop=""
+                                width="600px" height="600px" style="margin-top:115px;">Sorry, your
+                                browser does not support embedded videos,</video>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- Twitter Marquee-->
+
+
+                <div class="container-fluid-lg mt-5">
+                    <div class="row mt-5">
+                        <div class="col-3"></div>
+                        <div class="col-6 mt-5" style="text-align: center;">
+                            <h6 class="text-muted">Don’t take our word for it</h6>
+                            <h2 class="text-dark"><b>See what other investors are saying</b></h2>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+
+                    <marquee class="mt-5" behavior="scroll" direction="left" scrollamount="5" loop="">
+                        <div class="container-lg">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 28rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/34.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Aakash Goel</span>
+                                                <p class="text-muted">@aakashlpin</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Aakash Goel</p>
+                                            <p class="lead "> first stock market invest </p>
+                                            <p class="lead ">today. in case you're a st </p>
+                                            <p class="lead ">market noob like me, highl </p>
+                                            <p class="lead ">recommend @smallcase!</p>
+                                            <p class="text-muted mt-4">11:45 AM - 13 Jan 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 28rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/37.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Madhurima</span>
+                                                <p class="text-muted">@madhurimah99</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Madhurima</p>
+                                            <p class="lead ">So, I have been using @s </p>
+                                            <p class="lead ">for So, I have been using </p>
+                                            <p class="lead ">for investing some money </p>
+                                            <p class="lead ">of the best I would say </p>
+                                            <p class="lead">me.Go ahead and try it </p>
+                                            <p class="text-muted mt-4">8:14 AM - May 29 2021</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 28rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/35.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Gaurav</span>
+                                                <p class="text-muted">@Pen_Fighter</p>
+
+
+
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Gaurav</p>
+                                            <p class="lead ">OK! I found @smallcaseHQ</p>
+                                            <p class="lead ">hour ALAG LEVEL. Isn't</p>
+                                            <p class="lead ">your own mutual fund?</p>
+                                            <p class="text-muted mt-4">2:27 AM - 10 Jul 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 28rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/36.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">sampad swain</span>
+                                                <p class="text-muted"> @sampad</p>
+
+
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by sampad </p>
+                                            <p class="lead ">Lately, been playing w/ </p>
+                                            <p class="lead ">mgmt apps. Amongst </p>
+                                            <p class="lead "> is the shining </p>
+                                            <p class="lead ">recco on 💻 & 📱</p>
+                                            <p class="text-muted mt-4">9:40 AM - 4 Jul 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4">
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 24rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/38.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Ayushi Singh Rathore</span>
+                                                <p class="text-muted">@ayushirathore</p>
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Ayushi</p>
+                                            <p class="lead "> Invested for the first time </p>
+                                            <p class="lead ">muhurat trading. Adult </p>
+                                            <p class="lead ">max!@smallcaseHQ 🙌🏻</p>
+                                            <p class="text-muted mt-4">7:14 PM - 7 Nov 2018</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 24rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/39.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Shruti Ghatge</span>
+                                                <p class="text-muted">@s_ghatge</p>
+
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Shruti Ghatge
+                                            <p class="lead ">@smallcaseHQ! What a</p>
+                                            <p class="lead ">One of the best I've seen.</p>
+                                            <p class="text-muted mt-4">11:22 AM - 19 Sep 2017</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 24rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/41.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Nupur</span>
+                                                <p class="text-muted">@NupurJoshii</p>
+
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Nupur</p>
+                                            <p class="lead "> Gotta say this. Smallcase </p>
+                                            <p class="lead ">is KILLING IT!!!! 🔥</p>
+                                            <p class="text-muted mt-4">2:35 PM - Oct 4, 2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-3">
+                                    <div class="card" style="width: 18rem; height: 24rem;" style="text-align: center;">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <img src="Images/40.jpg" class="img-fluid m-4" alt="..." width="40px"
+                                                    height="30px" style="border-radius: 50%;">
+                                            </div>
+                                            <div class="col-7 mt-4">
+                                                <span class="text-dark">Kritii</span>
+                                                <p class="text-muted">@Kritii</p>
+
+
+                                            </div>
+                                            <div class="col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-brand-twitter mt-4" width="24"
+                                                    height="24" viewBox="0 0 24 24" stroke-width="1.5"
+                                                    stroke="rgb(67, 111, 235)" fill="none" stroke-linecap="round"
+                                                    stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <path
+                                                        d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                                                </svg>
+                                            </div>
+                                        </div>
+
+                                        <div class="card-body">
+                                            <p class="lead ">visit tweet by Kritii </p>
+                                            <p class="lead "> @smallcaseHQ is one of
+                                            <p class="lead "> new products that 😍</p>
+                                            <p class="text-muted mt-4">9:09 AM - Nov 29 2019</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </marquee>
+
+
+                    <!--section-->
+
+                    <div class="container-lg mt-5">
+                        <div class="row" style="text-align: center;">
+                            <div class="col-4"></div>
+                            <div class="col-4">
+                                <h4 class="text-muted lead">As seeen on</h4>
+                            </div>
+                            <div class="col-4"></div>
+                        </div>
+                        <div class="row mt-4" style="align-items: center;">
+                            <div class="col-2">
+                                <img src="Images/49.png" alt="" width="105px" height="42px">
+                            </div>
+                            <div class="col-2">
+                                <img src="Images/50.png" alt="" width="105px" height="48px">
+                            </div>
+                            <div class="col-2">
+                                <img src="Images/51.png" alt="" width="105px" height="40px">
+                            </div>
+                            <div class="col-2">
+                                <img src="Images/52.png" alt="" width="105px" height="48px">
+                            </div>
+                            <div class="col-2">
+                                <img src="Images/53.png" alt="" width="165px" height="45px">
+                            </div>
+                            <div class="col-2">
+                                <img src="Images/54.png" alt="" width="85px" height="65px">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-lg mt-5"></div>
+                    <div class="row">
+                        <div class="col-1">
+                        </div>
+                        <div class="col-10 text-white" style="background-image: url('Images/55.png'); border-radius: 1%; background-repeat: no-repeat; 
+                            text-align: center;">
+
+                            <div class="row">
+                                <div class="col-2"></div>
+
+                                <div class="col-8">
+                                    <h2 class="mt-5"><b>We work with India's</b></h2>
+                                    <h2 class=""><b> most trusted financial brands</b></h2>
+                                    <h4 class="lead">When you invest in smallcases, stocks you buy are held in your
+                                        existing demat account. Get started with your trading account</h4>
+
+
+                                    <div class="row mt-5">
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;">
+                                                <div class="card-body">
+                                                    <a href="https://smallcases.angelbroking.com/"><img
+                                                            src="Images/42.png" class="img-fluid" alt=""></a> ">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;">
+                                                <div class="card-body">
+                                                    <a
+                                                        href="https://deepors.hdfcsec.com/Login?retURL=%2fsmallcase%2findex"><img
+                                                            src="Images/43.png" class="img-fluid" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;">
+                                                <div class="card-body">
+                                                    <a href="https://smallcases.icicidirect.com/"><img
+                                                            src="Images/44.png" class="img-fluid" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;" s>
+                                                <div class="card-body">
+                                                    <a href="https://smallcase.kotaksecurities.com/"><img
+                                                            src="Images/45.png" class="img-fluid" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;" s>
+                                                <div class="card-body">
+                                                    <a href="https://smallcases.upstox.com/"><img src="Images/46.png"
+                                                            class="img-fluid" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-4">
+                                            <div class="card" style="width: 13rem; height: 5rem;" s>
+                                                <div class="card-body">
+                                                    <a href="https://smallcase.zerodha.com/"><img src="Images/47.png"
+                                                            class="img-fluid" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="btn btn-outline-white text-primary mt-5 mb-5" id="button"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">See All Brokers</button>
+                                </div>
+
+                                <div class="col-2"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-1">
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--Frequently Ask Question-->
+
+                <div class="container-lg mt-5">
+                    <div class="row">
+                        <div class="col-3"></div>
+                        <div class="col-6" style="text-align: center; margin-top: 100px;">
+                            <h2 class="text-dark"><b>Frequently Asked Questions</b></h2>
+                        </div>
+                        <div class="col-3"></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-4">
+                            <h6 class="text-secondary mb-5 mt-5">Getting Started</h6>
+
+                            <!--Frequently Ask Question1(i)-->
+
+                            <h6 onclick="fn()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>What are smallcases?</h6>
+                            <div id="div" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(ii)-->
+
+                            <h6 onclick="fn1()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>How to invest in smallcases?</h6>
+                            <div id="div1" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(iii)-->
+
+                            <h6 onclick="fn2()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Fees and Taxes</h6>
+                            <div id="div2" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(iv)-->
+
+                            <h6 onclick="fn3()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Can I buy smallcases as a SIP?</h6>
+                            <div id="div3" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                        </div>
+
+                        <div class="col-4 mt-5">
+
+                            <!--Frequently Ask Question1(i)-->
+
+                            <h6 onclick="fnc()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Do you get dividends from smallcases?</h6>
+                            <div id="divi" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(ii)-->
+
+                            <h6 onclick="fnc1()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>What is rebalancing?</h6>
+                            <div id="divi1" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(iii)-->
+
+                            <h6 onclick="fnc2()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Who manages smallcases?</h6>
+                            <div id="divi2" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                        </div>
+
+                        <div class="col-4">
+                            <h6 class="text-secondary mb-5 mt-5">Investing with smallcases</h6>
+
+                            <!--Frequently Ask Question1(i)-->
+
+                            <h6 onclick="fncx()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>watchlist and Drafts</h6>
+                            <div id="divix" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(ii)-->
+
+                            <h6 onclick="fncx1()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Creating yourown portfolio</h6>
+                            <div id="divix1" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(iii)-->
+
+                            <h6 onclick="fncx2()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Orders and History</h6>
+                            <div id="divix2" class="text-secondary ms-4 mb-4 mt-3"></div>
+
+                            <!--Frequently Ask Question1(iv)-->
+
+                            <h6 onclick="fncx3()" id="h6"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-chevrons-right" width="27" height="27"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(67, 111, 235)" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <polyline points="7 7 12 12 7 17" />
+                                    <polyline points="13 7 18 12 13 17" />
+                                </svg>Tracking a portfolio of stocks</h6>
+                            <div id="divix3" class="text-secondary ms-4 mb-4 mt-3"></div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5" style="text-align: center;">
+                        <div class="col-4"></div>
+                        <div class="col-4">
+                            <h6 class="text-dark">Have more questions or some feedback?</h6>
+
+                            <h6 class="text-secondary">We are just an email away</h6>
+
+                            <button class="btn btn-primary mt-4">Write to us</button>
+
+                            <h6 class="text-secondary mt-4">Or visit our <span class="text-primary">Help Center</span></h6>
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+
+
+                </div>
+
+
+
+                <!--Js for Frequently ask question-->
+
+                <script>
+                    function fn() {
+                        var x = document.getElementById("div");
+                        if (x.innerHTML === "") {
+                            x.innerHTML = "smallcases are modern investment products that help you build a low-cost, long-term & diversified portfolio easily. Created by professionals, each smallcase is a ready-made basket of stocks/ETFs that reflects a theme, strategy or objective. Watch our explainer video here.";
+                        } else {
+                            x.innerHTML = "";
+                        }
+                    }
+
+                    function fn1() {
+                        var x1 = document.getElementById("div1");
+                        if (x1.innerHTML === "") {
+                            x1.innerHTML = "A trading & demat account with any of our broker partners is all you need. Start exploring smallcases. Once you have chosen a smallcase, click the Buy smallcase button & proceed. You can set filters to find a suitable smallcase or simply use the Find your smallcase tool.";
+                        } else {
+                            x1.innerHTML = "";
+                        }
+
+                    }
+
+                    function fn2() {
+                        var x2 = document.getElementById("div2");
+                        if (x2.innerHTML === "") {
+                            x2.innerHTML = "The charges for investing in smallcases are as per the broker’s guidelines and only apply when you transact.Visit the help page on your broker platform for more information.For smallcases of stocks, the taxes are the same as equities - Long-Term Capital Gains (> 1 year of holding) are 10% of the total gains (if gains for the year exceed ₹1 lakh) and Short-Term Capital Gains (< 1 year of holding) are 15% of the total gains.For ETF smallcases, each ETF has its own taxation. Check the smallcase FAQs on your broker platform for a breakdown of the ETF taxes.";
+                        } else {
+                            x2.innerHTML = "";
+                        }
+                    }
+
+                    function fn3() {
+                        var x3 = document.getElementById("div3");
+                        if (x3.innerHTML === "") {
+                            x3.innerHTML = "Yes, you can buy and start a SIP in a smallcase in 1 click. You'll see an option to start SIP while buying the smallcase. We'll send you a reminder notification on the platform aswell as an email on the due date; just confirm the payment and done. SIPs start for as low as 5k!";
+                        } else {
+                            x3.innerHTML = "";
+                        }
+                    }
+
+                    function fnc() {
+                        var y = document.getElementById("divi");
+                        if (y.innerHTML === "") {
+                            y.innerHTML = "Dividends for any of the constituent stocks in the smallcase will be credited directly to your bank account. We also have smallcases centered around dividend investing. See how you can track your dividend returns.";
+                        } else {
+                            y.innerHTML = "";
+                        }
+                    }
+
+                    function fnc1() {
+                        var y1 = document.getElementById("divi1");
+                        if (y1.innerHTML === "") {
+                            y1.innerHTML = "Rebalancing is the process of reviewing the stocks/ETFs of a smallcase to ensure that it continues to reflect the underlying original idea. It takes into account fundamental factors,company updates, etc. to objectively narrow down on the right stocks/ETFs & their weightage.Rebalancing is done by the research team/creator of the smallcase as per its schedule. It is not an automatic process; you would be notified via email when a smallcase you have invested in has a rebalance update available. You can review the changes and apply the update in 2 clicks. Want to learn more? See our blog on Rebalancing 101.";
+                        } else {
+                            y1.innerHTML = "";
+                        }
+                    }
+
+                    function fnc2() {
+                        var y2 = document.getElementById("divi2");
+                        if (y2.innerHTML === "") {
+                            y2.innerHTML = "smallcases are created & managed by SEBI registered professionals who eat, sleep & breathe the stock market.The constituents in every smallcase pass stringent proprietary filters so that you don’t have to worry about making individual choices. Watch this video for more.";
+                        } else {
+                            y2.innerHTML = "";
+                        }
+                    }
+
+                    function fncx() {
+                        var z = document.getElementById("divix");
+                        if (z.innerHTML === "") {
+                            z.innerHTML = "You can track the performance & risk a smallcase before investing by adding it to your watchlist. Similarly, when you create a smallcase, you can save them as drafts before investing to track how they perform. You can always edit your drafts.";
+                        } else {
+                            z.innerHTML = "";
+                        }
+                    }
+
+                    function fncx1() {
+                        var z1 = document.getElementById("divix1");
+                        if (z1.innerHTML === "") {
+                            z1.innerHTML = "If you have a list of (up to 50) stocks that you like or have been recommended by a trusted source, you can also create your own smallcase. You can also save it as a draft to track its performance before investing.";
+                        } else {
+                            z1.innerHTML = "";
+                        }
+                    }
+
+                    function fncx2() {
+                        var z2 = document.getElementById("divix2");
+                        if (z2.innerHTML === "") {
+                            z2.innerHTML = "All orders placed for smallcases in the individual batches (buy, invest more, SIP, manage, rebalance, exit) can be found on the Orders page. If you expand a batch, you can see the quantities & prices of individual stocks.";
+                        } else {
+                            z2.innerHTML = "";
+                        }
+                    }
+
+                    function fncx3() {
+                        var z3 = document.getElementById("divix3");
+                        if (z3.innerHTML === "") {
+                            z3.innerHTML = "When you buy a smallcase, an index value of 100 is assigned to it. Say, after a year, your index value is 124 - meaning your smallcase has returned 24%. With the index value,you don’t have to track stocks individually. There are other performance metrics available at the portfolio level to give you more detailed insights";
+                        } else {
+                            z3.innerHTML = "";
+                        }
+                    }
+
+                </script>
+
+
+
+
+                <!--Footer Section 1-->
+
+                <footer class="footer">
+                    <div class="container-lg mt-5">
+                        <div class="row">
+                            <div class="col-6" style="text-align:left;">
+                                <img src="Images/57.png" alt="Logo" class="img-fluid" width="110px" height="28px">
+
+                                <p class="text-secondary mt-4">smallcase Technologies builds platforms & investment
+                                    products
+                                    to invest better in Indian equities. A smallcase is a basket of stocks/ETFs weighted
+                                    intelligently to reflect an idea</p>
+
+                                <p class="text-dark mt-4">Get weekly market insights and facts right in your inbox</p>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <!--SVG Mail Icon and input text box-->
+
+                                        <div class="input-group mt-4">
+                                            <div class="input-group-text" id="btnGroupAddon"><svg
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                    class="icon icon-tabler icon-tabler-mail" width="24" height="24"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="rgb(76, 74, 74)"
+                                                    fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                                                    <polyline points="3 7 12 13 21 7" />
+                                                </svg></div>
+                                            <input type="text" class="form-control" placeholder="Input group example"
+                                                aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <button class="btn btn-primary px-4 mt-4">Subscribe</button>
+                                    </div>
+                                    <div class="col-2"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-2" style="text-align: left;" id="ahref">
+                                <h6 class="text-dark">Company</h6>
+                                <a href="">
+                                    <p class="text-secondary mt-4">About</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">For Businesses</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Blog</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Press</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Careers</p>
+                                </a>
+                            </div>
+
+                            <div class="col-2" style="text-align: left;" id="ahref">
+                                <h6 class="text-dark">Products</h6>
+                                <a href="">
+                                    <p class="text-secondary mt-4">Publisher</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Share</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Gateway</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Brokers</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Tickertape</p>
+                                </a>
+                            </div>
+
+                            <div class="col-2" style="text-align: left;" id="ahref">
+                                <h6 class="text-dark">Fine Print</h6>
+                                <a href="">
+                                    <p class="text-secondary mt-4">Privacy</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Disclosures</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Definitions</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Investment Tools</p>
+                                </a>
+                                <a href="">
+                                    <p class="text-secondary">Return Calculation Methodology</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+                <!-- Footer Section 2 -->
+
+                <footer class="container-lg mb-2" id="foot"> <br>
+                    <div class="container-lg">
+                        <div class="row">
+                            <div class="col-3" style="text-align: left;">
+                                <p class="text-secondary">smallcase Technologies Private Limited
+                                    #51, 3rd Floor, Le Parc Richmonde,
+                                    Richmond Road, Shanthala Nagar,
+                                    Richmond Town, Bangalore - 560025</p>
+                            </div>
+
+                            <div class="col-1"></div>
+                            <div class="col-4" style="text-align:left;">
+                                <p class="text-secondary">Contact us on help@smallcase.com </p>
+                                <p class="text-secondary">Find us on:</p>
+
+
+                                <div class="container-lg mt-4" style="text-align: left;">
+
+                                <!--Facebook Svg Icons-->
+
+                                <a href="https://www.facebook.com/smallcaseHQ"><svg xmlns="http://www.w3.org/2000/svg"
+                                    class="icon icon-tabler icon-tabler-brand-facebook" width="24" height="24"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path
+                                        d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                                </svg></a>
+
+                            <!--Twitter Svg Icons-->
+
+                          <a href="https://twitter.com/smallcaseHQ"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z" />
+                        </svg></a>  
+
+
+                            <!--Instagram Svg Icons-->
+
+                           <a href="https://www.instagram.com/accounts/login/?next=/smallcasehq/"><svg xmlns="http://www.w3.org/2000/svg"
+                            class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <rect x="4" y="4" width="16" height="16" rx="4" />
+                            <circle cx="12" cy="12" r="3" />
+                            <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+                        </svg></a> 
+
+
+                            <!--Youtube Svg Icons-->
+
+                            <a href="https://www.youtube.com/c/smallcase"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="3" y="5" width="18" height="14" rx="4" />
+                                <path d="M10 9l5 3l-5 3z" />
+                            </svg></a>  
+
+
+                            <!--Linkedin Svg Icons-->
+
+                            <a href="https://www.linkedin.com/company/smallcase/?originalSubdomain=in"><svg xmlns="http://www.w3.org/2000/svg"
+                                class="icon icon-tabler icon-tabler-brand-linkedin" width="24" height="24"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="#597e8d" fill="none"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <rect x="4" y="4" width="16" height="16" rx="2" />
+                                <line x1="8" y1="11" x2="8" y2="16" />
+                                <line x1="8" y1="8" x2="8" y2="8.01" />
+                                <line x1="12" y1="16" x2="12" y2="11" />
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+                            </svg></a> 
+
+                                </div>
+                            </div>
+                            <div class="col-1"></div>
+
+                            <div class="col-3">
+                                <p class="text-dark">Help & Support</p>
+                                <img src="Images/56.png" class="img-fluid" width="120px" height="27px" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

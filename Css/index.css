@@ -1,0 +1,96 @@
+#b1{
+    margin-right: 300px;
+    margin-left: 30px;
+}
+body{
+    font-family: Graphik Web Regular,sans-serif;
+}
+#btn {
+    width: 59px;
+    height: 38px;
+    padding: 10px 16px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 0 0 0px coral;
+    text-align: center;
+    align-items: center;
+    margin-left: 8px;
+  }
+  #cont{
+      margin-top: 250px;
+  }
+  #video{
+      margin-top: -80px;
+  }
+  #row{
+      margin-top: -90px;
+  }
+  #row img{
+     
+      border-radius: 10%;
+  }
+
+#sp:hover{
+    color: rgb(67, 111, 235);
+  }
+#sp1:hover{
+    color: rgb(67, 111, 235);
+}
+#sp2:hover{
+    color: rgb(67, 111, 235);
+}
+#sp3:hover{
+    color: rgb(67, 111, 235);
+}
+
+#tr:hover{
+    border: 1px solid rgb(67, 111, 235);
+}
+#tr1:hover{
+    border: 1px solid coral;
+}
+#tr2:hover{
+    border: 1px solid rgb(52, 250, 52);
+}
+#tr3:hover{
+    border: 1px solid rgb(234, 234, 53);
+}
+#button{
+    background-color: white;
+}
+#h6:hover{
+    color: rgb(67, 111, 235);
+
+}
+#ahref a{
+text-decoration: none;
+}
+#ahref a:hover{
+    text-decoration:underline;
+    color: rgb(76, 74, 74);
+    }
+.footer{
+    margin-top: 80px;
+    border-top:1px solid rgb(76, 74, 74);
+    width: 1518px;
+    height: 40px;
+    align-items: center;
+    margin-left: -135px;
+}
+#foot{
+    margin-top: 280px;
+    border-top:1px solid rgb(76, 74, 74);
+    margin-left: -40px;
+    width: 1300px;
+}
+
+#navbar{
+    border-bottom: 1px solid rgb(76, 74, 74);
+}
+#navbar a:hover{
+text-decoration: underline;
+color: #0275d8;
+}
+.button{
+    width: 30px;
+}
